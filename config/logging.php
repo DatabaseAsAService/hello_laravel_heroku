@@ -36,7 +36,8 @@ return [
 
     'channels' => [
         'stack' => [
-            'driver' => 'stack',
+            'driver' => 'errorlog',
+            'level'  => 'debug',
             'channels' => ['daily'],
             'ignore_exceptions' => false,
         ],

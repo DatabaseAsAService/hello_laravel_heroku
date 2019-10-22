@@ -6,7 +6,8 @@
   "keywords": ["test"],
   "addons": ["heroku-postgresql:hobby-dev"],
   "env": {
-    "APP_ENV": "local"
+    "APP_ENV": "local",
+    "DB_CONNECTION": "pgsql"
   },
   "scripts": {
     "postdeploy": [

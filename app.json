@@ -1,0 +1,16 @@
+{
+  "name": "Test Laravel 6 app",
+  "description": "Test Laravel 6 app",
+  "repository": "https://github.com/dreamfactorysoftware/hello_laravel_heroku",
+  "logo": "https://github.com/dreamfactorysoftware/dreamfactory/raw/master/readme/vertical-logo-fullcolor.png",
+  "keywords": ["test"],
+  "addons": ["heroku-postgresql:hobby-dev"],
+  "env": {
+    "APP_ENV": "local"
+  },
+  "scripts": {
+    "postdeploy": [
+      "php artisan migrate --seed --force"
+    ]
+  }
+}
